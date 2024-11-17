@@ -10,3 +10,11 @@ console.log(uc('hello'));
 
 //give command nodmeon main.js
 //organisation
+//clearing the setinterval 
+const x=  setInterval(  //this is a global function
+    function(){ //function passed as an argument//callback fn
+console.log('nodejs');
+    },1000
+)
+
+setTimeout(()=>{clearInterval(x)},5000)
